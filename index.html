@@ -1,0 +1,44 @@
+<html>
+
+  <style>
+    .flex-container {
+      display: flex;
+      background-color: white;
+      margin: 5px;
+    }
+    
+    .flex-container > div {
+      background-color: white;
+      margin: 2px;
+    }
+  </style>
+
+  <head>
+    
+    <title>Test Page</title>
+    
+    <meta charset="UTF-8"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+
+    <input type="number" id = "size" name="size" size = "4" maxlength="3" onchange="checkSize(this)"><br>
+    
+    <div class = "flex-container">
+      <button id ="load" type="button" onclick="load()">
+        Load
+      </button>
+    </div>
+
+    <script src="js/index.js">
+    </script>
+
+    <div id="main">
+    </div>
+
+  </body>
+
+</html>
